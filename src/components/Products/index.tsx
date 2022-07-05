@@ -15,7 +15,6 @@ export default function Products(props: {category:number})  {
   const { data, request, error, loading } = useFetch();
   const { requestCart } = useAddCart();
   const [cart, setCart] = React.useState<ProductTypes[]>([]);
-
   const Imagem = React.forwardRef((props:any, ref) => <S.ImgProduct {...props} />)
   const Text = React.forwardRef((props:any, ref) => <TextH3 {...props} />)
 
